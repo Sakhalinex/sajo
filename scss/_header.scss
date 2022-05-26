@@ -1,0 +1,70 @@
+@import './abstracts.scss';
+
+.header {
+    background: #008284;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &__logo img,
+    &__cart img {
+
+        @include media-for-size(phone-only) {
+            width: 30px;
+            height: 30px;
+        }
+        
+        @include media-for-size(tablet-portrait-up) {
+            width: 50px;
+            height: 50px;
+        }
+
+        @include media-for-size(tablet-landscape-up) {
+            width: 70px;
+            height: 70px;
+        }
+
+        @include media-for-size(desktop-up) {
+            width: 90px;
+            height: 90px;
+        }
+    }
+
+    &__cart {
+        cursor: pointer;
+    }
+}
+
+.menu {
+    // flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-start;
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    &__item {
+        padding: 1.875em 1.53125em;
+        @include adaptiv-font(32, 8);
+        color: #fff;
+        
+        &_active {
+            color: #222;
+            background: #C8E95A;
+        }
+    }
+
+    &__link {
+        color: inherit;
+    }
+}
