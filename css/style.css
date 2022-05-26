@@ -220,6 +220,9 @@ big-desktop-up - Большие мониторы
   align-items: center;
   justify-content: space-between;
 }
+.header__logo img, .header__cart img {
+  cursor: pointer;
+}
 @media (max-width: 599px) {
   .header__logo img, .header__cart img {
     width: 30px;
@@ -244,17 +247,12 @@ big-desktop-up - Большие мониторы
     height: 90px;
   }
 }
-.header__cart {
-  cursor: pointer;
-}
 
 .menu {
   display: flex;
-  justify-content: flex-start;
 }
 .menu__list {
   display: flex;
-  justify-content: center;
 }
 .menu__item {
   padding: 1.875em 1.53125em;

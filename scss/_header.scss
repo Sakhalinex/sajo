@@ -17,6 +17,8 @@
     &__logo img,
     &__cart img {
 
+        cursor: pointer;
+
         @include media-for-size(phone-only) {
             width: 30px;
             height: 30px;
@@ -37,19 +39,12 @@
             height: 90px;
         }
     }
-
-    &__cart {
-        cursor: pointer;
-    }
 }
 
 .menu {
-    // flex: 1 1 auto;
     display: flex;
-    justify-content: flex-start;
     &__list {
         display: flex;
-        justify-content: center;
     }
 
 
